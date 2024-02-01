@@ -1,0 +1,9 @@
+[submodule "declarative-smart-contracts"]
+	path = declarative-smart-contracts
+	url = https://github.com/loulankxh/declarative-smart-contracts.git
+[submodule "gasOpt-test"]
+	path = gasOpt-test
+	url = https://github.com/loulankxh/gasOpt-test.git
+[submodule "gasOpt-setGeneration"]
+	path = gasOpt-setGeneration
+	url = https://github.com/loulankxh/gasOpt-setGeneration.git
