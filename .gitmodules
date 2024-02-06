@@ -4,12 +4,9 @@
 [submodule "gasOpt-test"]
 	path = gasOpt-test
 	url = https://github.com/loulankxh/gasOpt-test.git
-[submodule "gasOpt-setGeneration"]
-	path = gasOpt-setGeneration
-	url = https://github.com/loulankxh/gasOpt-setGeneration.git
 [submodule "smart_contracts_evaluation"]
 	path = smart_contracts_evaluation
 	url = https://github.com/jyl-jyl/smart_contracts_evaluation.git
-[submodule "selective_view_materialization_algorithm"]
-	path = selective_view_materialization_algorithm
-	url = https://github.com/taoluo/selective_view_materialization_algorithm.git
+[submodule "gasOpt-setGeneration"]
+	path = gasOpt-setGeneration
+	url = https://github.com/taoluo/gasOpt-setGeneration.git
