@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# compilerPath=/home/lan/gasOpt/declarative-smart-contracts
-# algoPath=/home/lan/gasOpt/gasOpt-setGeneration
-# testPath=/home/lan/gasOpt/testRepo/gasOpt-test
 compilerPath=./declarative-smart-contracts
 algoPath=./gasOpt-setGeneration
-testPath=./testRepo/gasOpt-test
+# testPath=./testRepo/gasOpt-test
+testPath=./smart_contracts_evaluation
 
 cd $compilerPath
 chmod 777 ./generateMin.sh
@@ -31,9 +29,10 @@ cd $compilerPath
 . ./generateNoOptimization.sh
 . ./generateMin.sh
 cd ..
-cp -r $compilerPath/solidity/min $testPath/contracts/min
-cp -r $compilerPath/solidity/noOptimization $testPath/contracts/noOptimization
+# cp -r $compilerPath/solidity/min $testPath/contracts/min
+# cp -r $compilerPath/solidity/noOptimization $testPath/contracts/noOptimization
+. ./moveContract.sh
 
 
 cd $testPath
-. ./runTest.sh
+. ./all_experiments.sh
