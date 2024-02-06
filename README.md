@@ -5,7 +5,7 @@
 ### Download the repos:
 Git clone this repo, and download (git clone) the following repos into the main folder:
 1. Compiler repo: [declarative-smart-contracts](https://github.com/loulankxh/declarative-smart-contracts)
-2. Materialization Algorithm repo: [gasOpt-setGeneration](https://github.com/loulankxh/gasOpt-setGeneration)
+2. Materialization Algorithm repo: [gasOpt-setGeneration](https://github.com/taoluo/gasOpt-setGeneration)
 3. Test repo: [smart_contracts_evaluation](https://github.com/jyl-jyl/smart_contracts_evaluation)
 
 ### Install dependencies
@@ -38,7 +38,7 @@ cd declarative-smart-contracts
 sbt "run dependency-graph"
 sbt "run judgement-check"
 ```
-2. Move the [generated metadata(contain-judgement, relation-dependencies)](https://github.com/loulankxh/declarative-smart-contracts/tree/29b0cebc5b3df05d920e1555efda6e4884cd7184/view-materialization) into [alogrithm folder](https://github.com/loulankxh/gasOpt-setGeneration/tree/79d73b6dec12a727035e96ba978c50549462021b/view-materialization).
+2. Move the [generated metadata(contain-judgement, relation-dependencies)](https://github.com/loulankxh/declarative-smart-contracts/tree/29b0cebc5b3df05d920e1555efda6e4884cd7184/view-materialization) into [alogrithm folder](https://github.com/taoluo/gasOpt-setGeneration/tree/main/view-materialization).
 3. Generate materialization plans:
 ```
 cd gasOpt-setGeneration
@@ -47,7 +47,7 @@ python3 ./min-set.py
 ```
 
 #### B. Compile Datalog into Solidity
-1. Move the [full materialization plan](https://github.com/loulankxh/gasOpt-setGeneration/tree/79d73b6dec12a727035e96ba978c50549462021b/view-materialization/full-set) and [minimal materialization plan](https://github.com/loulankxh/gasOpt-setGeneration/tree/79d73b6dec12a727035e96ba978c50549462021b/view-materialization/min-set) into [compiler foler](https://github.com/loulankxh/declarative-smart-contracts/tree/29b0cebc5b3df05d920e1555efda6e4884cd7184/view-materialization).
+1. Move the [full materialization plan](https://github.com/taoluo/gasOpt-setGeneration/tree/main/view-materialization/full-set) and [minimal materialization plan](https://github.com/taoluo/gasOpt-setGeneration/tree/main/view-materialization/min-set) into [compiler foler](https://github.com/loulankxh/declarative-smart-contracts/tree/29b0cebc5b3df05d920e1555efda6e4884cd7184/view-materialization).
 2. Generate Solidity of Incremential Datalog and minimal versions
 ```
 cd declarative-smart-contracts
