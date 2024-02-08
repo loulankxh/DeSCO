@@ -14,7 +14,7 @@ git clone --recursive https://github.com/loulankxh/DeSCO.git
 ### Install dependencies
 1. Install [SBT](https://www.scala-sbt.org/1.x/docs/Setup.html), more information provided in [declarative-smart-contracts](https://github.com/loulankxh/declarative-smart-contracts)
 2. Install [Python](https://www.python.org)
-3. Install [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+3. Install [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm), and run ```npm install``` in the test folder.
 4. Install [Ganache](https://trufflesuite.com/ganache/): npm install -g ganache
 5. Install [Truffle](https://trufflesuite.com/docs/truffle/how-to/install/): npm install -g truffle
 
